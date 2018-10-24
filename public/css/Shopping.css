@@ -1,0 +1,96 @@
+*{
+  padding:0;
+  margin:0;
+  list-style:none;
+}
+#Shopping{
+  height:600px;
+  width:900px;
+  background:red;
+}
+.gw_image,.gw_warp{
+  height:600px;
+  background: #bbb;
+  float:left;
+}
+.gw_image{
+  width:400px;  
+}
+.gw_warp{
+  width:500px;
+}
+.gw_image_big,.gw_image_Midsize{
+  width:400px;
+  height:400px;
+}
+.gw_image_Midsize>img,.gw_image_Midsize>div{/*中型图*/
+  margin:5%;
+  width:90%;
+  height:90%;
+}
+.gw_image_Midsize>div{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100px;
+  height:100px;
+  background:rgba(233,23,123,.3);
+}
+.gw_image_Midsize{
+  position:relative;
+}
+.gw_image_big{
+  position:absolute;
+  top:0;
+  left:400px;
+  background: #ccc;
+  display:none;
+}
+.gw_image_Small{
+  position:relative;
+  width:400px;
+  height:75px;
+  overflow:hidden;
+}
+.gw_image_Small>i{
+  display:inline-block;
+  height:100%;
+  width:40px;
+  position:absolute;
+  top:0;
+}
+.gw_image_Small>i:first-child{
+  background:rgba(20,20,20,.5) url(../image/gt_black.svg);
+  left:0;
+}
+.gw_image_Small>i:last-child{
+  background:rgba(200,200,20,.5) url(../image/gt_black.svg);
+  float:right;
+  right:0;
+}
+.gw_image_Small>ul{
+  height:100%;
+  margin:0 28.75px;
+}
+.gw_image_Small>ul>li{
+  height:60px;
+  width:60px;
+  margin:7.5px 4.25px;
+  float:left;
+}
+.gw_image_Small>ul>li>img{
+  height:100%;
+  width:100%;
+}
+.gw_image_share{
+  width:400px;
+  height:75px;
+  background: #cac;
+}
+/*积分*/
+.gw_Sales>ul>li{
+  float:left;
+  width:33.1%;
+  text-align:center;
+  border-left:1px solid #ccc;
+}

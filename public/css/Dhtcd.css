@@ -1,0 +1,70 @@
+div#md{
+    width: 100%;
+    diaplay:fixed;
+  }
+.Crumbs,.md_box{
+  width: 1250px;
+  margin: 0 auto;
+}
+.md_box::after{
+  clear: both;
+  content: "";
+  display: block;
+}
+.md_nav,.md_aside{
+    width: 19%;
+	margin:6px;
+  }
+  .md_nav,.md_aside,.md_content{
+    background-color: #EAFAFF;
+    float: left;
+    height: 100%;
+  }
+.md_content{
+    width: 60%;
+    color: rgb(8, 38, 65);
+	padding:20px;
+	box-sizing:border-box;
+  }
+.md_aside{
+    color:grey;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+.md_aside>ul>li>span{
+  margin:0 5px;
+  text-align: center;
+}
+.md_aside>ul>li:last-child>span{
+  margin-left:-4px;
+}
+
+.md_nav_science{
+  padding:10px;
+}
+.md_nav_science>h3,.md_nav_science>ul{
+  padding-left:30px;
+}
+.science_Computer>ul{
+  margin-left:20px;
+}
+.md_nav_science>ul>li>ul{
+  margin-left:20px;
+}
+
+/*评论装发*/
+.md_comment{
+  display:flex;
+}
+.md_comment>span{
+  display:black !Important;
+  width:25%;
+  box-sizing:border-box;
+  margin:10px 0px;
+  border-left:1px solid #ccc;
+  text-align:center;
+  font-size:14px;
+}
+.md_comment>span:first-child{
+  border:none;
+}

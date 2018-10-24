@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>登录注册</title>
+  <link rel="icon" href="http://localhost:3000/Dhtcd.ico" type="img/x-ico">
+  <link rel="stylesheet" href="http://localhost:3000/css/login.css">
+  <script type="text/javascript" src="http://localhost:3000/js/login.js"></script>
+	<script type="text/javascript" src="http://localhost:3000/js/jquery-3.2.1.js"></script>
+ </head>
+ <body onload="load()">
+ <div id="login_box">
+	<div id="LoginAndRegister">
+
+	  <div class="mr-22px" onclick="logon()">账号登录</div>
+		<div onclick="login()">账号注册</div>
+		
+	  <form action="/user/logon" method="post" id="logon">
+	    <input type="text" name="uid" placeholder=" 手机号/邮箱/用户名"autocomplete="off">
+		  <input type="password"name="upwd" placeholder=" 密码"autocomplete="off">
+		  <button>登录</button>
+		</form>
+		
+		<form action="/user/login" method="post" id="login">
+				<input type="text" id="uname" name="ename" placeholder=" 请输入您的昵称" onblur="inname()" autocomplete="off">
+				<span id="a"></span>
+				<input type="text" id="phone" name="phone" placeholder=" 请输入您的手机号码" onblur="inphone()" autocomplete="off">
+				<span id="b"></span>
+				<input type="text" id="email" name="email" placeholder=" 请输入您的电子邮箱" onblur="inemail()" autocomplete="off">
+				<span id="c"></span>
+				<input type="password" id="pwd" name="epwd" placeholder=" 请输入您的密码" onblur="inpwd()" autocomplete="off">
+				<span id="d"></span>
+				<input type="password" id="pwds" name="pwds" placeholder=" 请确认您输入的密码"onblur="inpwds()" autocomplete="off">
+				<span id="e"></span>
+				<button>注册</button>
+	  </form>
+	</div>
+</div>
+ </body>
+</html>
